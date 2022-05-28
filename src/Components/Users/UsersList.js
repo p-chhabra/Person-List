@@ -8,7 +8,7 @@ const UsersList = (props) => {
           </div>
     <ul className="flex flex-col justify-center items-center w-full max-w-[1000px]">
         {props.users.map((user)=>{
-            return <li className='bg-slate-700 p-4 border-b-4 border-green-500 w-full text-gray-300 font-bold rounded-md'>{user.name} ({user.age} years old)</li>
+            return <li key={user.id} className='bg-slate-700 p-4 border-b-4 border-green-500 w-full text-gray-300 font-bold rounded-md'>{user.name} ({user.age} years old)</li>
         })}
     </ul>
     </div>
